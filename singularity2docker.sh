@@ -124,7 +124,7 @@ is_installed jq
 echo
 echo "2.  Preparing sandbox for export..."
 sandbox=$(mktemp -d -t singularity2docker.XXXXXX)
-singularity build --sandbox ${sandbox} ${image} > /dev/null 2>&1
+singularity build --sandbox ${sandbox} ${image} # > /dev/null 2>&1
 
 
 ################################################################################
